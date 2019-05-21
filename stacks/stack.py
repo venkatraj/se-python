@@ -12,9 +12,10 @@ class Stack:
         data_node.set_next(current)
 
     def pop(self):
-        current = self.head
-        self.head = current.get_next()
-        return current.data
+        if self.head is not None:
+            current = self.head
+            self.head = current.get_next()
+            return current.data
 
     def peek(self):
         return self.head.data
