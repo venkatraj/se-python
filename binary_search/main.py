@@ -1,4 +1,4 @@
-from binary_search import binary_search
+from binary_search import binary_search, binary_search_recursion
 
 
 def main():
@@ -6,6 +6,10 @@ def main():
     result = binary_search(5, primes)
     print(result)
     result = binary_search(79, primes)
+    print(result)
+    result = binary_search_recursion(5, primes, 0, len(primes))
+    print(result)
+    result = binary_search_recursion(79, primes, 0, len(primes))
     print(result)
 
 
